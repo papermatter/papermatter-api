@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_services",
+  "info": {
+    "name": "Page Services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "cover": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.photo"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_homes",
+  "info": {
+    "name": "Page Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Heading": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.photo"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.section"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_portafolios",
+  "info": {
+    "name": "Page Portafolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

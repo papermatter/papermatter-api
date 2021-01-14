@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_photos",
+  "info": {
+    "name": "photo",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "project_photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "alt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
