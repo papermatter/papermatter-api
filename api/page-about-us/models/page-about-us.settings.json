@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "page_abouts",
+  "collectionName": "page_about_uses",
   "info": {
-    "name": "Page About",
+    "name": "Page About Us",
     "description": ""
   },
   "options": {
@@ -13,10 +13,6 @@
   "attributes": {
     "heading": {
       "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "text",
       "required": true
     },
     "cover": {

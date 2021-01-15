@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "page_portafolios",
+  "collectionName": "page_portfolio",
   "info": {
-    "name": "Page Portafolio",
+    "name": "Page Portfolio",
     "description": ""
   },
   "options": {
