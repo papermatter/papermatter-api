@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "name": "About Us"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "goal": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section",
+      "required": true
+    },
+    "experience": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section",
+      "required": true
+    },
+    "location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.section",
+      "required": true
+    }
+  }
+}

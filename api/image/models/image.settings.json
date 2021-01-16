@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "clients",
+  "collectionName": "images",
   "info": {
-    "name": "client",
-    "description": ""
+    "name": "Image"
   },
   "options": {
     "increments": true,
@@ -11,13 +10,15 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "name": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "url": {
-      "type": "string"
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     },
-    "logo": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,6 +26,12 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "client": {
+      "model": "client"
+    },
+    "service": {
+      "model": "services"
     }
   }
 }
