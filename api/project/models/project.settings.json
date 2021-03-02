@@ -28,16 +28,6 @@
       "type": "string",
       "required": true
     },
-    "year": {
-      "type": "string",
-      "required": true
-    },
-    "cover": {
-      "type": "component",
-      "repeatable": false,
-      "component": "page.photo",
-      "required": true
-    },
     "photos": {
       "type": "component",
       "repeatable": true,
@@ -48,6 +38,15 @@
     },
     "service": {
       "model": "services"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }
