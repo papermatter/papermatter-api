@@ -32,6 +32,25 @@
       ],
       "plugin": "upload",
       "required": true
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "steps": {
+      "type": "dynamiczone",
+      "components": [
+        "page.step"
+      ]
     }
   }
 }
