@@ -7,13 +7,11 @@
   },
   "options": {},
   "attributes": {
-    "project_photo": {
+    "photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
-        "images",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": true
