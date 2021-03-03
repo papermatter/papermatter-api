@@ -3,18 +3,18 @@
   "name": "PapperMatter API",
   "description": "Pappermatter Strapi CMS",
   "keywords": ["strapi", "heroku"],
-  "repository": "https://github.com/fabrizziomoncada/papermatter-api",
+  "repository": "https://github.com/papermatter/papermatter-api",
   "addons": ["heroku-postgresql:hobby-dev"],
   "image": "heroku/nodejs",
   "success_url": "/admin",
   "env": {
-    "CLOUDINARY_NAME": {
-      "description": "Cloud name of your cloudinary account",
-      "generator": ""
-    },
     "CLOUDINARY_KEY": {
       "description": "API Key of your cloudinary account",
       "value": ""
+    },
+    "CLOUDINARY_NAME": {
+      "description": "Cloud name of your cloudinary account",
+      "generator": ""
     },
     "CLOUDINARY_SECRET": {
       "description": "API Secret of your cloudinary account",
