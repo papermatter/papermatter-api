@@ -2,7 +2,7 @@
   "name": "papermatter-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "The Paper Matter Strapi CMS",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",

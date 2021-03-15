@@ -1,4 +1,4 @@
-# PaperMatter API
+# The Paper Matter API
 
 ## One-Click Heroku deploy
 
