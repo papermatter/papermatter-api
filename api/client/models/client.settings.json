@@ -24,7 +24,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
